@@ -15,9 +15,15 @@ config MACH_XIAOMI_SDM660
 
 menu "Xiaomi board selection"
 
+	config MACH_LONGCHEER
+		bool "Longcheer board"
+		select MACH_XIAOMI_SDM660
+		help
+		  Support for Longcheer boards
+
 	config MACH_XIAOMI_WHYRED
 		bool "Xiaomi whyred board"
-		select MACH_XIAOMI_SDM660
+		select MACH_LONGCHEER
 		help
 		  Support for Xiaomi Redmi Note 5 (Pro)
 
