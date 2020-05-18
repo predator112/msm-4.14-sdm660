@@ -544,9 +544,8 @@ config MEMORY_STATE_TIME
 	help
 	  Memory time statistics exported to /sys/kernel/memory_state_time
 
-config QPNP_MISC
-	tristate "QPNP Misc Peripheral"
-	depends on MFD_SPMI_PMIC
+config ANT_CHECK
+	tristate "ant check gpio"
 	help
 	  Say 'y' here to include support for the QTI QPNP MISC
 	  peripheral. The MISC peripheral holds the USB ID interrupt
@@ -587,6 +586,8 @@ config TEST_IRQ_REQUESTER
 
 	  If in doubt, say N.
 
+=======
+>>>>>>> df55f07e5981... drivers: misc: Import ant_check
 source "drivers/misc/c2port/Kconfig"
 source "drivers/misc/eeprom/Kconfig"
 source "drivers/misc/cb710/Kconfig"
