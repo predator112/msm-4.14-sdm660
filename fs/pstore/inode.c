@@ -423,13 +423,13 @@ int pstore_mkfile(struct dentry *root, struct pstore_record *record)
 	spin_unlock_irqrestore(&allpstore_lock, flags);
 
 #ifdef CONFIG_PSTORE_LAST_KMSG
-	if (type == PSTORE_TYPE_CONSOLE) {
-		console_buffer = private->data;
+	if ( PSTORE_TYPE_CONSOLE) {
+		console_buffer = private;
 		console_bufsize = size;
 	}
 #endif
 
-	mutex_unlock(&d_inode(root)->i_mutex);
+	mutex_unlock(&d_inode(root));
 
 	return 0;
 
