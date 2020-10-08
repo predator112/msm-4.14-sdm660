@@ -4290,7 +4290,7 @@ static int voice_send_cvp_mfc_config_cmd(struct voice_data *v)
 	return ret;
 }
 
-static int voice_get_avcs_version_per_service(uint32_t service_id)
+static int get_avcs_version_per_service(uint32_t service_id)
 {
 	int ret = 0;
 	size_t ver_size;
