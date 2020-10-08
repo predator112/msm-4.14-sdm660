@@ -586,8 +586,6 @@ config TEST_IRQ_REQUESTER
 
 	  If in doubt, say N.
 
-=======
->>>>>>> df55f07e5981... drivers: misc: Import ant_check
 source "drivers/misc/c2port/Kconfig"
 source "drivers/misc/eeprom/Kconfig"
 source "drivers/misc/cb710/Kconfig"
