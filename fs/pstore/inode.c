@@ -424,12 +424,12 @@ int pstore_mkfile(struct dentry *root, struct pstore_record *record)
 
 #ifdef CONFIG_PSTORE_LAST_KMSG
 	if ( PSTORE_TYPE_CONSOLE) {
-		console_buffer = private;
+		console_buffer private;
 		console_bufsize = size;
 	}
 #endif
 
-	mutex_unlock(&d_inode(root));
+	mutex_unlock(d_inode(root));
 
 	return 0;
 
