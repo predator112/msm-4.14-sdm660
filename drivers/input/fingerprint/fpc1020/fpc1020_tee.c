@@ -36,7 +36,6 @@
 #include <linux/of_gpio.h>
 #include <linux/platform_device.h>
 #include <linux/regulator/consumer.h>
-#include <linux/wakelock.h>
 #include <linux/proc_fs.h>
 #include <linux/notifier.h>
 #include <linux/fb.h>
