@@ -12,9 +12,9 @@ jobs:
            git clone https://github.com/predator112/msm-4.14-sdm660 -b whyred kernel
            cd kernel
            git clone https://github.com/PREDATOR-project/myscripts.git -b master
-           chmod +x myscripts/gcc-setup.sh
+           chmod +x myscripts/stable-setup.sh
            chmod +x myscripts/whyred.sh
-           source ./myscripts/gcc-setup.sh
+           source ./myscripts/stable-setup.sh
            ./myscripts/whyred.sh
 workflows:
   version: 2.1
