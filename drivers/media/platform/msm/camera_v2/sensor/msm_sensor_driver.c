@@ -788,9 +788,6 @@ void msm_sensor_set_module_info(struct msm_sensor_ctrl_t *s_ctrl)
 		case FRONT_CAMERA_B:
 			strcat(module_info, "front: ");
 			break;
-		case FRONT_AUX_CAMERA_B:
-			strcat(module_info, "front_aux: ");
-			break;
 		default:
 			strcat(module_info, "unknown: ");
 			break;
@@ -1371,7 +1368,6 @@ int32_t msm_sensor_driver_probe(void *setting,
 				reg_setting;
 		}
 
-		slave_info->sensor_id_info = slave_info32->sensor_id_info;
 #ifdef CONFIG_MACH_LONGCHEER
 		slave_info->vendor_id_info = slave_info32->vendor_id_info;
 		slave_info->vcm_id_info = slave_info32->vcm_id_info;
